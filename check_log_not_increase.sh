@@ -9,7 +9,8 @@ do
     ###Not changed
     if test $nowlength -gt $lastlength
     then
-        echo LOG_RUNNING
+        echo LOG_RUNNING $nowlength , $lastlength
+        lastlength=$nowlength
         sleep 5
         continue
     fi
